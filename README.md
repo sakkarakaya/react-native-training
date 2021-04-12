@@ -1,2 +1,2 @@
 # react-native-training
-exercises in class
+exercises/works in class
