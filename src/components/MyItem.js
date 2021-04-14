@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, SafeAreaView, StyleSheet } from 'react-native'
+import { View, Text, SafeAreaView, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 
 const MyItem = (props) => {
     return (
-        <SafeAreaView>
+        <TouchableWithoutFeedback onPress={() => props.onSelect()}>
             <View style={[styles.container, {backgroundColor: props.data.color }]}>
                 <View style={{flex: 1}}>
 
@@ -15,7 +15,7 @@ const MyItem = (props) => {
 
                 {!props.data.isActive && <Text style={styles.text}>Inaktive</Text>}
             </View>
-        </SafeAreaView>
+        </TouchableWithoutFeedback>
     )
 }
 

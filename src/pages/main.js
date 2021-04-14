@@ -33,12 +33,10 @@ const Main = (props) => {
             <View style={styles.container}>
 
                 {myItems.map(item => {
-                    return <MyItem data={item} />
+                    return <MyItem data={item} 
+                    onSelect={() => props.navigation.navigate('Detail', {selected: item})}/>
                 })}
-                <Button
-                    title="Go to details"
-                    onPress={() => props.navigation.navigate('Detail')}
-                />
+                
             </View>
            
         </SafeAreaView>
