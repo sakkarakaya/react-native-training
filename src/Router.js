@@ -4,20 +4,32 @@ import * as React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Mainshop from './pages/Mainshop';
-import Main from './pages/main'
+import Main from './pages/main';
+import Detail from './pages/Detail';
+
+function Maincom(){
+  return(
+    <Stack.Navigator>
+      <Stack.Screen name="List" component={Main}/>
+      <Stack.Screen name="Detail" component={Detail}/>
+    </Stack.Navigator>
+  )
+}
 
 const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="List" component={Main} />
-        <Stack.Screen name="Shop" component={Mainshop} />
+      <Tab.Navigator>
+        <Tab.Screen name="Listcom" component={Maincom} />
+        <Tab.Screen name="Shop" component={Mainshop} />
         
-      </Stack.Navigator>
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }

@@ -3,6 +3,7 @@ import { Text, View, SafeAreaView, StyleSheet, Button } from 'react-native';
 import MyBanner from '../components/MyBanner';
 import MyItem from '../components/MyItem';
 
+
 const Main = (props) => {
     const myItems = [
         {
@@ -35,10 +36,11 @@ const Main = (props) => {
                     return <MyItem data={item} />
                 })}
                 <Button
-                    title="Go to Shop Page"
-                    onPress={() => props.navigation.navigate('Shop')}
+                    title="Go to details"
+                    onPress={() => props.navigation.navigate('Detail')}
                 />
             </View>
+           
         </SafeAreaView>
     )
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, SafeAreaView, Text, StyleSheet, Alert, TextInput } from 'react-native';
 import productList from '../productsData.json';
-import ProductCard from '../components/ProductCard'
+import ProductCard from '../components/ProductCard';
+
 
 const Mainshop = () => {
     useEffect(() => {
@@ -41,6 +42,7 @@ const Mainshop = () => {
                 keyExtractor={(item, index) => index.toString()}
                 numColumns={2}
             />
+            
         </SafeAreaView>
     )
 }
