@@ -8,7 +8,7 @@
 
 import React from 'react';
 import { View, Text, SafeAreaView, StyleSheet, TextInput } from 'react-native';
-import MyComponent from './components/MyComponent';
+import MyComponent from '../components/MyComponent';
 
 
 const App = () => {

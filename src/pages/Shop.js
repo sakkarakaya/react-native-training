@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, Alert, Text, View, StyleSheet} from 'react-native';
-import MyButton from './components/MyButton';
-import InputPanel from './components/InputPanel';
+import MyButton from '../components/MyButton';
+import InputPanel from '../components/InputPanel';
 
 
 const Shop = () => {
