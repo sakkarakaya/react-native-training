@@ -39,6 +39,7 @@ const Main = (props) => {
                 })}
 
                 <Button title='fetch data' onPress={() => props.navigation.navigate('Axios')}/>
+                <Button title='fetch big data' onPress={() => props.navigation.navigate('AxiosPractice')}/>
                 
             </View>
            

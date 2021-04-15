@@ -10,6 +10,7 @@ import Mainshop from './pages/Mainshop';
 import Main from './pages/main';
 import Detail from './pages/Detail';
 import Axios from './pages/Axios';
+import AxiosPractice from './pages/AxiosPractice';
 
 function Maincom(){
   return(
@@ -17,6 +18,7 @@ function Maincom(){
       <Stack.Screen name="List" component={Main}/>
       <Stack.Screen name="Detail" component={Detail}/>
       <Stack.Screen name="Axios" component={Axios}/>
+      <Stack.Screen name="AxiosPractice" component={AxiosPractice}/>
     </Stack.Navigator>
   )
 }
