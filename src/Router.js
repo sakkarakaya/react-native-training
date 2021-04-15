@@ -9,12 +9,14 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Mainshop from './pages/Mainshop';
 import Main from './pages/main';
 import Detail from './pages/Detail';
+import Axios from './pages/Axios';
 
 function Maincom(){
   return(
     <Stack.Navigator>
       <Stack.Screen name="List" component={Main}/>
       <Stack.Screen name="Detail" component={Detail}/>
+      <Stack.Screen name="Axios" component={Axios}/>
     </Stack.Navigator>
   )
 }

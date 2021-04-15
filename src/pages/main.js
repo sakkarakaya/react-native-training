@@ -4,6 +4,7 @@ import MyBanner from '../components/MyBanner';
 import MyItem from '../components/MyItem';
 
 
+
 const Main = (props) => {
     const myItems = [
         {
@@ -36,6 +37,8 @@ const Main = (props) => {
                     return <MyItem data={item} 
                     onSelect={() => props.navigation.navigate('Detail', {selected: item})}/>
                 })}
+
+                <Button title='fetch data' onPress={() => props.navigation.navigate('Axios')}/>
                 
             </View>
            
