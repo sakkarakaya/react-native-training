@@ -3,4 +3,4 @@ exercises/works in class
 
 Navigation -> Stack / Tab
 
-Axios -> then / async-await
+Axios -> then-catch / async-await
