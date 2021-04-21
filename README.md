@@ -4,3 +4,5 @@ exercises/works in class
 Navigation -> Stack / Tab
 
 Axios -> then-catch / async-await
+
+Redux -> store + reducer + provider
