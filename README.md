@@ -5,4 +5,4 @@ Navigation -> Stack / Tab
 
 Axios -> then-catch / async-await
 
-Redux -> store + reducer + provider
+Redux -> store + reducer(state,action) + <provider> => useSelector, useDispatch
