@@ -12,7 +12,8 @@ import {AppRegistry} from 'react-native';
 // import Router from './src/Router'
 
 import Redux from './src/Redux'
+import ReduxRouter from './src/ReduxRouter'
 
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => Redux);
+AppRegistry.registerComponent(appName, () => ReduxRouter);
