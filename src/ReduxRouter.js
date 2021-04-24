@@ -6,18 +6,24 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Restaurants from './pages/Restaurants'
 import Favorites from './pages/Favorites'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import { initialState, reducer } from './context';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
+const store = createStore(reducer, initialState)
 
 const ReduxRouter = () => {
     return (
-        <NavigationContainer>
-            <Tab.Navigator>
-                <Tab.Screen name="Restaurants" component={Restaurants} />
-                <Tab.Screen name="Favorites" component={Favorites} />
-            </Tab.Navigator>
-        </NavigationContainer>
+        <Provider store={store}>
+            <NavigationContainer>
+                <Tab.Navigator>
+                    <Tab.Screen name="Restaurants" component={Restaurants} />
+                    <Tab.Screen name="Favorites" component={Favorites} />
+                </Tab.Navigator>
+            </NavigationContainer>
+        </Provider>
     )
 }
 

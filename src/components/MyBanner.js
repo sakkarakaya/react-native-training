@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const MyBanner = () => {
+const MyBanner = ({item}) => {
     return(
         <View>
-            <Text>Banner</Text>
+            <Text>{item.description}</Text>
         </View>
     )
 }

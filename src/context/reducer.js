@@ -9,12 +9,21 @@ function reducer(state, action){
             return { ...state }
 
         case "reset":
-        state.counter = state.counter * 0;
-        return { ...state }
+            state.counter = state.counter * 0;
+            return { ...state }
 
         case "change":
-        state.name = action.payload.username;
-        return { ...state }
+            state.name = action.payload.username;
+            return { ...state }
+
+
+
+
+        case "add-fav":
+            const favoriList = [...state.favList]
+            favoriList.push(action.payload.clicked)
+            state.favList = favoriList
+            return { ...state }
 
         default:
             return { ...state }

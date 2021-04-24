@@ -1,6 +1,7 @@
 const initialState = {
     counter: 0,
-    name: 'default'
+    name: 'default',
+    favList: []
 };
 
 export {initialState}
