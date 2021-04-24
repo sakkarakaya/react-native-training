@@ -11,9 +11,11 @@ import {AppRegistry} from 'react-native';
 // import Mainshop from './src/pages/Mainshop'
 // import Router from './src/Router'
 
-import Redux from './src/Redux'
-import ReduxRouter from './src/ReduxRouter'
+// import Redux from './src/Redux'
+// import ReduxRouter from './src/ReduxRouter'
+
+import Login from './src/Login'
 
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => ReduxRouter);
+AppRegistry.registerComponent(appName, () => Login);
